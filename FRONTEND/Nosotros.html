@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <div class="logo">Tienda de Chocolates</div>
+        <input type="text" placeholder="Buscar productos...">
+        <button>Inicio de sesión</button>
+        <button onclick="window.location.href='cart.html'">Carrito</button>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items">
+                <!-- Productos en el carrito -->
+                <div class="cart-item">
+                    <h3>Chocolate Oscuro</h3>
+                    <p>$5.00 x 2 = $10.00</p>
+                </div>
+                <!-- Más productos... -->
+            </div>
+            <div class="total">
+                <h3>Total: $10.00</h3>
+                <button onclick="window.location.href='index.html'">Continuar Comprando</button>
+                <button onclick="window.location.href='confirmation.html'">Proceder al Pago</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Contacto: info@tiendachocolates.com</div>
+        <div>Enlaces rápidos | Suscripción al boletín</div>
+    </footer>
+    <script src="js/app2.js"></script>
+</body>
+</html>

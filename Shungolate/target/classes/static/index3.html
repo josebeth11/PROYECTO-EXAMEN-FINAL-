@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Chocolates</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Delicias de Chocolate</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#carrito">Carrito</a></li>
+                        <li><a href="#resenas">Reseñas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Productos -->
+            <section id="productos">
+                <h2>Catálogo de Chocolates</h2>
+                <div class="product-list" id="productList"></div>
+            </section>
+
+            <!-- Carrito -->
+            <section id="carrito">
+                <h2>Tu Carrito</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="checkoutCart"></tbody>
+                </table>
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <p id="totalCheckout">$0.00</p>
+                    <button class="btn btn-comprar">Comprar</button>
+                </div>
+            </section>
+
+            <!-- Reseñas -->
+            <section id="resenas">
+                <h2>Reseñas de Clientes</h2>
+                <div class="resena-list" id="resenaList"></div>
+                <form id="formCreate" class="resena-form">
+                    <h3>Agregar Reseña</h3>
+                    <label for="createUsuario">Usuario:</label>
+                    <input type="text" id="createUsuario" required>
+                    <label for="createProducto">Producto:</label>
+                    <input type="text" id="createProducto" required>
+                    <label for="createRating">Rating:</label>
+                    <input type="number" id="createRating" min="1" max="5" required>
+                    <label for="createComentario">Comentario:</label>
+                    <textarea id="createComentario" rows="3" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+                <form id="formUpdate" class="resena-form d-none">
+                    <h3>Actualizar Reseña</h3>
+                    <input type="hidden" id="resenaId">
+                    <label for="updateUsuario">Usuario:</label>
+                    <input type="text" id="updateUsuario" required>
+                    <label for="updateProducto">Producto:</label>
+                    <input type="text" id="updateProducto" required>
+                    <label for="updateRating">Rating:</label>
+                    <input type="number" id="updateRating" min="1" max="5" required>
+                    <label for="updateComentario">Comentario:</label>
+                    <textarea id="updateComentario" rows="3" required></textarea>
+                    <button type="submit" class="btn">Actualizar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Delicias de Chocolate. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="productos.js"></script>
+    <script src="carrito.js"></script>
+    <script src="resenas.js"></script>
+</body>
+</html>

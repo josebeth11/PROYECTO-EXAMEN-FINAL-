@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+         <div class="navbar">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <ul class="menu-list" id="menuList">
+    <li><a href="index2.html">Inicio</a></li>
+    <li><a href="carrito.html">Carrito</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="pago.html">Pago</a></li>
+  </ul>
+</div>
+
+    </header>
+
+    <main>
+        <form  method="POST">
+  <label for="nombre">Nombre:</label><br />
+  <input class="barra"type="text" id="nombre" name="nombre" /><br />
+  <label for="email">Email:</label><br />
+  <input type="email" id="email" name="email" /><br />
+  <label for="mensaje">Mensaje:</label><br />
+  <textarea id="mensaje" name="mensaje"></textarea><br />
+  <input class="barra"  type="submit" value="Enviar mensaje" />
+</form>
+</main>
+    <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Tienda de Chocolates. Todos los derechos reservados.</p>
+                <div class="social-media">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+ <script src="app2.js"></script>
+ <script src="contacto.js"></script>
+</html>

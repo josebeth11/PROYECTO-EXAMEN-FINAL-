@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+         <div class="navbar">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <ul class="menu-list" id="menuList">
+    <li><a href="index2.html">Inicio</a></li>
+    <li><a href="carrito.html">Carrito</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="pago.html">Pago</a></li>
+  </ul>
+</div>
+
+        <div class="logo">Tienda de Chocolates</div>
+        <input type="text" placeholder="Buscar productos...">
+        <button>Inicio de sesión</button>
+        <button onclick="window.location.href='Carrito.html'">Carrito</button>
+    </header>
+
+       <main>
+         <main>
+    <section id="productList" class="container"></section>
+
+    <section id="checkoutSection" class="container">
+      <h2>Carrito de Compra</h2>
+      <table id="checkoutCart" class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Precio Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Los elementos del carrito se agregarán aquí -->
+        </tbody>
+      </table>
+      <div id="totalCheckout">Total: $0.00</div>
+      <button class="btn-comprar">Comprar</button>
+    </section>
+  </main>
+
+   
+    <footer>
+        <div>Contacto: info@tiendachocolates.com</div>
+        <div>Enlaces rápidos | Suscripción al boletín</div>
+    </footer>
+    <script src="app2.js"></script>
+    <script src="carrito.js"></script>
+    
+</body>
+</html>

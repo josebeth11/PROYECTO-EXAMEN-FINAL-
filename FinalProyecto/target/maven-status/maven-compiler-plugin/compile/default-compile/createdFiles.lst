@@ -1,0 +1,11 @@
+com\mycompany\finalproyecto\controller\PedidoController.class
+com\mycompany\finalproyecto\repository\PedidoRepository.class
+com\mycompany\finalproyecto\repository\UsuarioRepository.class
+com\mycompany\finalproyecto\model\Pedido.class
+com\mycompany\finalproyecto\controller\UsuarioController.class
+com\mycompany\finalproyecto\model\Usuario.class
+com\mycompany\finalproyecto\repository\ChocolateRepository.class
+com\mycompany\finalproyecto\WebConfig.class
+com\mycompany\finalproyecto\controller\ChocolateController.class
+com\mycompany\finalproyecto\FinalProyecto.class
+com\mycompany\finalproyecto\model\Chocolate.class

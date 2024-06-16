@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Chocolates</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <ul class="menu-list" id="menuList">
+    <li><a href="index2.html">Inicio</a></li>
+    <li><a href="carrito.html">Carrito</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="pago.html">Pago</a></li>
+  </ul>
+</div>
+  
+        <div class="logo">Tienda de Chocolates</div>
+        <input class="barra" type="text" placeholder="Buscar productos...">
+        <button>Inicio de sesión</button>
+        <button onclick="window.location.href='Carrito.html'">Carrito</button>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a la Tienda de Chocolates</h1>
+            <p>Descubre nuestros productos más deliciosos.</p>
+        </section>
+        <section class="featured">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid">
+                <!-- Productos de ejemplo -->
+                <div class="product">
+                    <img src="negro.jpg" alt="Producto 1"
+                    width="150" height="150">
+                    <h3>Chocolate Oscuro</h3>
+                    <p>$5.00</p>
+                    <button onclick="window.location.href='productos.html'">Ver Detalles</button>
+                </div>
+                <div class="product">
+                    <img src="leche.jpg" alt="Producto 2" width="150" height="150">
+                    <h3>Chocolate con Leche</h3>
+                    <p>$4.00</p>
+                    <button onclick="window.location.href='productos.html'">Ver Detalles</button>
+                </div>
+                <!-- Más productos... -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Contacto: info@tiendachocolates.com</div>
+        <div>Enlaces rápidos | Suscripción al boletín</div>
+    </footer>
+    <script src="app2.js"></script>
+</body>
+</html>

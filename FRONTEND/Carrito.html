@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+         <div class="navbar">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <ul class="menu-list" id="menuList">
+    <li><a href="index2.html">Inicio</a></li>
+    <li><a href="carrito.html">Carrito</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="pago.html">Pago</a></li>
+  </ul>
+</div>
+  
+    </header>
+
+    <header>
+        <div class="logo">Tienda de Chocolates</div>
+        <input type="text" placeholder="Buscar productos...">
+        <button>Inicio de sesión</button>
+        <button onclick="window.location.href='Carrito.html'">Carrito</button>
+    </header>
+    <main>
+         <h1>Carrito de Compras</h1>
+    </header>
+    <main>
+        <ul id="cart-items">
+             <div class="product-details">
+            <img src="chocolate1.jpg" alt="Chocolate 1">
+            <div class="details">
+                <h2>Chocolate Negro Intenso</h2>
+                <p class="description">Una experiencia de sabor profundo y satisfactorio que te dejará deseando más.</p>
+                <p class="price">$5.99</p>
+                <div class="actions">
+                    <button onclick="addToCart()">Añadir al Carrito</button>
+                    <input type="number" value="1" min="1">
+                </div>
+            </div>
+        </div>
+        </ul>
+        <div id="total">Total: $0.00</div>
+        <div class="actions">
+            <button onclick="continueShopping()">Continuar Comprando</button>
+            <button onclick="proceedToCheckout()">Proceder al Pago</button>
+        </div>
+    </main>
+
+    <footer>
+        <div>Contacto: info@tiendachocolates.com</div>
+        <div>Enlaces rápidos | Suscripción al boletín</div>
+    </footer>
+    <script src="app2.js"></script>
+    <script src="carrito.js"></script>
+
+</body>
+</html>
